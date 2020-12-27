@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<link rel = "icon"; href = "https://pngimage.net/wp-content/uploads/2018/06/logo-cv-png-6.png"; type = "image/x-icon"> 
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<title>CV</title>
+<style>
+html {scroll-behavior: smooth;}
+
+* {box-sizing: border-box;}
+
+.slideshow-container {width: 100%;  position: relative;  margin: auto;}
+
+
+.prev, .next { cursor: pointer;  position: absolute; top: 50%; padding: 16px; color: white; font-size: 18px;  transition: 0.6s ease;  border-radius: 0 3px 3px 0;  user-select: none;background: rgba(0, 0, 0, 0.5);}
+
+
+.next { right: 0; border-radius: 3px 0 0 3px;}
+
+.prev:hover, .next:hover {  background-color: rgba(0,0,0,0.8);}
+
+.dot {  cursor: pointer;  height: 1vw;  width: 1vw;  margin: 0 2px;  background-color:#bbb;  border-radius: 50%;  display: inline-block; transition: background-color 0.6s ease;}
+
+.active, .dot:hover {  background-color: #717171;}
+
+
+.fade {-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;animation-name: fade;animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+
+
+.education { position: relative; font-size:3vw}
+
+.education img{  vertical-align:middle; width:100%; height:45vw; border:2px solid black}
+
+.education .content {position: absolute; bottom: 0;background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.5); color: #f1f1f1; width:100%;height:25%;  padding: 2vw 2vw 2vw 2vw; } 
+
+.container { position: absolute; top:13.8vw; left:44.2vw ; width: 26vw; height:15.3vw;margin:auto;  text-align:center; }
+
+.image {width: 26vw; height: 15.3vw;position: absolute; cursor:pointer}
+
+.overlay { position: absolute; background-color: slategray;overflow: hidden; width: 26vw; height: 15.2vw;transform: scale(0); transition: .3s ease; cursor:pointer; }
+
+.container:hover .overlay { transform: scale(1);}
+
+.text { color: white; font-size: 1.5vw; position: absolute; }
+
+body{background-color:slategrey; width:84%; margin-left:16%; font-family:'Poppins'}
+
+ul {list-style-type: none;  margin: 0;  padding: 0;  width: 16%;  background-color: #293333; position:fixed; top:0; left:0;  height:100%; font-size:1.5vw; font-family:'Poppins'; }
+
+li a {  display: block;  color:lightgrey;  padding: 8px 16px;  text-decoration:none;transition: 0.4s}
+
+li a:hover {  background-color:#687BE9;  color: white;}
+
+
+#experience {font-size:1.5vw;  width: 45%;position:absolute; left:3%;box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);transition: 0.3s;background-color:lightskyblue;margin-top: 60%;  overflow: auto}
+#skills {font-size:1.5vw;  width: 45%; position:absolute; left:52%;box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);transition: 0.3s; background-color:#40E0D0;margin-top: 60%;  overflow: auto}
+#achievements {font-size:1.5vw;  width: 45%;position:absolute; left:3%;box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);transition: 0.3s;background-color:lightblue; overflow: auto}
+#activities {font-size:1.5vw;  width: 45%; position:absolute; left:52%;box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);transition: 0.3s; background-color:lightsteelblue; overflow: auto}
+
+.card { position:relative; transition: 0.3s;cursor:pointer; text-align:center}
+#achievements:hover {background-color:mintcream;}
+#activities:hover { background-color:mintcream;}
+#experience:hover {background-color:mintcream;}
+#skills:hover {background-color:mintcream;}
+.activ {  padding: 2vw 16px;}
+
+#contacts{position:absolute; color:black; margin-top: 90%;  width:84%;overflow: auto; font-size:1.5vw;  background-color:skyblue;padding:2vw}
+
+@media only screen and (max-width: 600px) {
+  body{width:90%; margin-left:0%;margin:auto;}
+  #achievements {width: 70%;overflow: auto;left:15%; padding-bottom:15px}
+  #activities{width:70%;position:absolute; margin-top: 44%;overflow: auto; left:15%}
+  #experience{width:70%;position:absolute; margin-top: 90%;overflow: auto;left:15%; padding-bottom:15px}
+  #skills{width:70%;position:absolute; margin-top: 130%;overflow: auto;left:15%; padding-bottom:15px}
+  #contacts{width:100%;margin-top: 160%;margin-left:-5%}
+  ul {display:none}
+  .container { position: absolute; top:13.2vw; left:37vw ; width: 25vw; height:15vw; margin:auto; text-align:center; }
+  .prev, .next{font-size:10px}
+  .overlay { position: absolute; background-color: slategray;overflow: hidden; width: 26vw; height: 15vw; transform: scale(0); transition: .3s ease; cursor:pointer; top:1vw;}}
+</style>
+
+</head>
+<body>
+
+
+<ul>
+	<img  src="https://sun9-69.userapi.com/impf/ejJe5CRvkloXILtVOMBdTBpqfoRTv8t5veSdKg/NQbLRDh3N0E.jpg?size=436x582&quality=96&proxy=1&sign=62cf43edf3c6939321379fc7684852e2&type=album" style="border-radius:50%;width:8vw; height:9vw; display:block; margin-left:auto; margin-right:auto; margin-top:5px; border:3px double #39FF14" >
+    <hr>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#achievements">Achievements</a></li>
+  <li><a href="#activities"> Activities</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#contacts">Contacts</a></li>
+</ul>
+
+
+
+<div id="home">
+<div class= "first">
+	<img src="https://www.elgato.com/themes/custom/smalcode/v19-img/pages/epoc/hero/foreground.png?v=3" width="100%" >
+   </div>
+ 
+	
+</div>
+<hr style = "border:2px solid black">
+
+
+
+
+<div class="container">
+	<p class="image"><span style= "font-size:4vw; color: #2024BA;">Aidyn</span> 
+<span style= "font-size:4vw; color: black">Zhumakadyr</span>
+</p>
+  <div class="overlay">
+    <div class="text"><p>Gender: Male<br>
+Position: Student<br>
+Date of Birth: 27.07.2003<br>
+Place of Birth: Kazakhstan, Taraz city</p></div>
+  </div>
+</div>
+
+
+<div class="education" style="text-align:center;"><br><span id="education" style= "font-size: 4vw; ">Education</span>
+<hr style="border:2px solid black; width:60%">
+<div class="slideshow-container" style="text-align:left;">
+<div class="mySlides fade">
+	<img src= "https://i.ytimg.com/vi/J-57YqSgRrI/maxresdefault.jpg" >
+    <div class = "content" style= "font-size:3vw">University<br>
+    <p style= "font-size:1.5vw">Entered foundation program of the Nazarbayev University (2020)</p></div>
+</div>
+<div class="mySlides fade">
+	<img src= "https://sun9-46.userapi.com/impf/adRSaHdIGYn5tn2iPE5MLqlnu6b00mgxQGjaCQ/N07ajd9WkQ8.jpg?size=1280x805&quality=96&proxy=1&sign=dc6ef5d37d08e33692c478c982298a63&type=album" >
+    <div class = "content" style= "font-size:3vw"> Secondary School
+    <p style= "font-size:1.5vw">Studied at Bilim-Innovation lyceum (BIL/KTL) from 2015 and graduated in 2020 with GPA:5.00/5.00</p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div></div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<hr style = "border:2px solid black">
+<br>
+
+<div class="card">
+<div id= "achievements">
+
+  <div class="activ">
+    <br><span style= "font-size:3vw">Achievements and Projects</span>
+    <hr style="width:70%; border: 1px solid black">
+    <br><li>Awarded 3rd place at Regional Math Olympiad (2018).</li>
+<br><li>Prepared at the republican and regional training camp for the Mathematics Olympiad (2017-2018). </li>
+<br><li>Created Telegram bot that was written in Python (2020).</li>
+<br><li> Made CV website that was written in html (2020).</li>
+  </div>
+</div>
+</div>
+<div class="card">
+<div id= "activities">
+<div class="activ">
+    <br><span style= "font-size:3vw">Extracurricular Activities</span>
+    <hr style="width:70%; border: 1px solid black">
+    <br><li> 4 years of swiimming (5 various awards).</li>
+<br><li> Reading articles about cutting-edge technologies and breakthroughs.</li>
+<br><li> Learning program languages such as Python, CSS and HTML.</li>
+<br><li> Class monitor/headman.</li>
+<br><li> Organizing numerous school activities. </li><br>
+  </div>
+</div>
+</div>
+
+
+<div class="card">
+<div id= "skills">
+
+  <div class="activ">
+    <br><span style= "font-size:3vw">Skills</span>
+    <hr style="width:70%; border: 1px solid black">
+    <br><li> English language (upper-intermediate).</li>
+<br><li> Soft skills (problem-solving and critical thinking)</li>
+<br><li>Playing chess</li>
+  </div>
+</div>
+</div>
+<div class="card">
+<div id= "experience">
+<div class="activ">
+    <br><span style= "font-size:3vw">Experience</span>
+    <hr style="width:70%; border: 1px solid black">
+   <br><li> Tutoring 7 and 8 grades for the Regional and Republican Math Olimpiad.</li>
+<br><li> Mentoring for new applicants to NU.</li>
+<br><li> Head of Taraz BIL students who entered universities in Nur-Sultan. </li>
+  </div>
+</div>
+</div>
+
+
+<div id="contacts">
+	<p>Contacts: <br> +7(707)-699-84-47 & aidyn.zhumakadyr@nu.edu.kz<br>
+	<a href= "https://vk.com/idon2003" target="_blank"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png" alt= "Visit VK" width="20" height="20"></a>
+
+	<a href= "https://www.instagram.com/idon003/"target="_blank"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt= "Visit Instagram" width="20" height="20"></a>
+
+	<a href= "https://t.me/idon2003"target="_blank"><img src = "https://web.telegram.org/img/logo_share.png" alt= "Visit Telegram" width="20" height="20"></a>
+
+	<a href= "mailto:aidyn.zhumakadyr@nu.edu.kz"target="_blank"><img src = "https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" alt= "Visit Gmail" width="20" height="20"></a>
+
+	<a href= " https://wa.me/<+77076998447>"target="_blank"><img src = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt= "Visit WhatsApp" width="20" height="20"></a></p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
